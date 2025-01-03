@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="htmx.min.js"></script>
+  <title>rimokon</title>
+</head>
+
+<body>
+
+  <div class="center-align container">
+
+    <p>rimokon</p>
+    <!-- <p>Rust and HTMX Media and System Controller</p> -->
+
+    
+    <!-- 
+    <a hx-get="/author" hx-target="#status" hx-swap="innerHTML">
+      Author</a>
+     -->
+
+    <div class="row">
+      <div class="col s4 offset-s4">
+        <button class="btn-large yellow" hx-get="/e?id=sup" hx-target="#status"
+          hx-swap="innerHTML">SU</button><br /><br />
+        <button class="btn-large" hx-get="/e?id=up" hx-target="#status" hx-swap="innerHTML">^</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s4">
+        <button class="btn-large" hx-get="/e?id=lt" hx-target="#status" hx-swap="innerHTML">&lt;</button>
+      </div>
+      <div class="col s4">
+        <button class="btn-floating btn-large red" hx-get="/e?id=mc" hx-target="#status" hx-swap="innerHTML"></button>
+      </div>
+      <div class="col s4">
+        <button class="btn-large" hx-get="/e?id=rt" hx-target="#status" hx-swap="innerHTML">&gt;</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s4 offset-s4">
+        <button class="btn-large" style="font-variant-caps: small-caps;" hx-get="/e?id=dn" hx-target="#status"
+          hx-swap="innerHTML">v</button>
+        <br /><br />
+        <button class="btn-large yellow" hx-get="/e?id=sdn" hx-target="#status" hx-swap="innerHTML">SD</button>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+    <br />
+
+    <div class="row">
+      <div class="col s3">
+        <button class="btn" hx-get="/e?id=o-dp" hx-target="#status" hx-swap="innerHTML">D+</button>
+      </div>
+      <div class="col s3">
+        <button class="btn" hx-get="/e?id=o-bbc" hx-target="#status" hx-swap="innerHTML">BBC</button>
+      </div>
+      <div class="col s3">
+        <button class="btn" hx-get="/e?id=o-nf" hx-target="#status" hx-swap="innerHTML">NF</button>
+      </div>
+      <div class="col s3">
+        <button class="btn" hx-get="/e?id=o-pr" hx-target="#status" hx-swap="innerHTML">Prime</button>
+      </div>
+      <!--      
+      <div class="col s2">
+        <button class="btn">YouTube</button>
+      </div>
+      <div class="col s2">
+        <button class="btn red">Sleep</button>
+      </div>
+      -->
+
+
+    </div>
+
+    <div class="divider"></div>
+    <br />
+
+    <div class="row">
+      <div class="col s4">
+        <button class="btn-large blue" hx-get="/e?id=kf" hx-target="#status" hx-swap="innerHTML">F</button>
+      </div>
+      <div class="col s4">
+        <button class="btn-large blue" hx-get="/e?id=ks" hx-target="#status" hx-swap="innerHTML">SPC</button>
+      </div>
+      <div class="col s4">
+        <button class="btn-large blue" hx-get="/e?id=kc" hx-target="#status" hx-swap="innerHTML">Close</button>
+        <!-- Ctrl + W -->
+      </div>
+    </div>
+
+
+
+
+
+
+    <div id="status" style="background-color: lightblue;">
+      Ready
+    </div>
+
+  </div>
+
+</body>
+
+</html>
