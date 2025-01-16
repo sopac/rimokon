@@ -3,12 +3,18 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="htmx.min.js"></script>
   <title>rimokon</title>
+  <style>
+    * {
+      touch-action: manipulation;
+    }
+  </style>
 </head>
 
 <body>
@@ -18,7 +24,7 @@
     <p>rimokon</p>
     <!-- <p>Rust and HTMX Media and System Controller</p> -->
 
-    
+
     <!-- 
     <a hx-get="/author" hx-target="#status" hx-swap="innerHTML">
       Author</a>
