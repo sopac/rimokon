@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="htmx.min.js"></script>
   <title>rimokon</title>
   <style>
@@ -34,26 +35,38 @@
       <div class="col s4 offset-s4">
         <button class="btn-large yellow" hx-get="/e?id=sup" hx-target="#status"
           hx-swap="innerHTML">SU</button><br /><br />
-        <button class="btn-large" hx-get="/e?id=up" hx-target="#status" hx-swap="innerHTML">^</button>
+        <button class="btn-large" hx-get="/e?id=up" hx-target="#status" hx-swap="innerHTML">
+          <i class="large material-icons">arrow_upward</i>
+        </button>
+      </div>
+      <div class="col s4">
+        <button class="btn blue" hx-get="/e?id=kr" hx-target="#status" hx-swap="innerHTML">
+          <i class="large material-icons">refresh</i>
+        </button>
       </div>
     </div>
 
     <div class="row">
       <div class="col s4">
-        <button class="btn-large" hx-get="/e?id=lt" hx-target="#status" hx-swap="innerHTML">&lt;</button>
+        <button class="btn-large" hx-get="/e?id=lt" hx-target="#status" hx-swap="innerHTML">
+          <i class="large material-icons">arrow_back</i>
+        </button>
       </div>
       <div class="col s4">
         <button class="btn-floating btn-large red" hx-get="/e?id=mc" hx-target="#status" hx-swap="innerHTML"></button>
       </div>
       <div class="col s4">
-        <button class="btn-large" hx-get="/e?id=rt" hx-target="#status" hx-swap="innerHTML">&gt;</button>
+        <button class="btn-large" hx-get="/e?id=rt" hx-target="#status" hx-swap="innerHTML">
+          <i class="large material-icons">arrow_forward</i>
+        </button>
       </div>
     </div>
 
     <div class="row">
       <div class="col s4 offset-s4">
-        <button class="btn-large" style="font-variant-caps: small-caps;" hx-get="/e?id=dn" hx-target="#status"
-          hx-swap="innerHTML">v</button>
+        <button class="btn-large" hx-get="/e?id=dn" hx-target="#status" hx-swap="innerHTML">
+          <i class="large material-icons">arrow_downward</i>
+        </button>
         <br /><br />
         <button class="btn-large yellow" hx-get="/e?id=sdn" hx-target="#status" hx-swap="innerHTML">SD</button>
       </div>
@@ -73,7 +86,7 @@
         <button class="btn" hx-get="/e?id=o-nf" hx-target="#status" hx-swap="innerHTML">NF</button>
       </div>
       <div class="col s3">
-        <button class="btn" hx-get="/e?id=o-pr" hx-target="#status" hx-swap="innerHTML">Prime</button>
+        <button class="btn" hx-get="/e?id=o-pr" hx-target="#status" hx-swap="innerHTML">AP</button>
       </div>
       <!--      
       <div class="col s2">
@@ -92,13 +105,19 @@
 
     <div class="row">
       <div class="col s4">
-        <button class="btn-large blue" hx-get="/e?id=kf" hx-target="#status" hx-swap="innerHTML">F</button>
+        <button class="btn-large blue" hx-get="/e?id=kf" hx-target="#status" hx-swap="innerHTML">
+          <i class="material-icons">fullscreen</i>
+        </button>
       </div>
       <div class="col s4">
-        <button class="btn-large blue" hx-get="/e?id=ks" hx-target="#status" hx-swap="innerHTML">SPC</button>
+        <button class="btn-large blue" hx-get="/e?id=ks" hx-target="#status" hx-swap="innerHTML">
+          <i class="material-icons">space_bar</i>
+        </button>
       </div>
       <div class="col s4">
-        <button class="btn-large blue" hx-get="/e?id=kc" hx-target="#status" hx-swap="innerHTML">Close</button>
+        <button class="btn-large blue" hx-get="/e?id=kc" hx-target="#status" hx-swap="innerHTML">
+          <i class="material-icons">close</i>
+        </button>
         <!-- Ctrl + W -->
       </div>
     </div>

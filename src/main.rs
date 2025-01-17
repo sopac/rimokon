@@ -73,6 +73,11 @@ async fn handler_event(params: Query<Params>) -> Html<&'static str> {
             enigo.key(Key::Meta, Press).unwrap();
             enigo.key(Key::Unicode('w'), Click).unwrap();
             enigo.key(Key::Meta, Release).unwrap();
+        },
+        "kr" => {
+            enigo.key(Key::Meta, Press).unwrap();
+            enigo.key(Key::Unicode('r'), Click).unwrap();
+            enigo.key(Key::Meta, Release).unwrap();
         }
         &_ => todo!(),
     }
